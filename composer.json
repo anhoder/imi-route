@@ -1,0 +1,19 @@
+{
+    "name": "alanalbert/imi-route",
+    "description": "为IMI框架添加rou路由文件",
+    "type": "library",
+    "authors": [
+        {
+            "name": "AlanAlbert",
+            "email": "1766447919@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Alan\\ImiRoute\\": "src/"
+        }
+    },
+    "require": {
+        "yurunsoft/imi": "~1.0"
+    }
+}
