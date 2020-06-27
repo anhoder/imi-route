@@ -1,34 +1,42 @@
 # imi-route
 
-中文 | [English](./README-en.md)
+[中文](./README.md) | English
 
-使用laravel的方式管理imi的路由。
+The library enables the IMI framework to support the management of routes through PHP files.
 
-## 使用
+## Usage
 
-1、使用composer安装依赖：
+1. Install package
 
 ```sh
 composer require alanalbert/imi-route
 ```
-2、将下列代码添加到项目根目录的`Main.php`文件中：
-  
+
+2. Add code 
+
+Add the following code to the `/project/Main.php` file:
+
 ```php
 <?php
 namespace ImiApp;
 
 use Imi\Main\AppBaseMain;
-  
+
 class Main extends AppBaseMain
 {
-  public function __init()
-  {
-      \Alan\ImiRoute\Route::init(); // Add this line
-  }
+    public function __init()
+    {
+        \Alan\ImiRoute\Route::init(); // Add this line
+    }
 
 }
 ```
-3、在项目根目录下，创建`route/route.php`目录及文件，在`route.php`文件中，你就可以管理你的路由了：
+
+3. Create `route.php` file
+
+Create `/project/route/route.php` file(and dir).
+
+And then, you can manage your routes through PHP files. For example:
 
 ```php
 /**
